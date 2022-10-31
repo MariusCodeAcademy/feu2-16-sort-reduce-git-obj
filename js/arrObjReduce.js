@@ -46,3 +46,41 @@ const ages = users.map((uObj) => uObj.age).reduce((avg, sk) => avg + sk, 0) / us
 console.log('ages ===', ages);
 
 // 1gauti visu vardu ilgiu vidurki
+
+const userNameLengthAvg = users.reduce((avg, uObj) => {
+  const currentUserLength = uObj.name.length;
+  const currentUserAvgPart = currentUserLength / users.length;
+  return avg + currentUserAvgPart;
+}, 0);
+console.log(
+  'name lengths',
+  users.map((u) => u.name.length)
+);
+console.log('userNameLengthAvg ===', userNameLengthAvg);
+
+// 2. grazinti jauniausia zmogu
+const youngest = users.reduce((foundYoungest, uObj) => {
+  if (uObj.age < foundYoungest.age) {
+    foundYoungest = uObj;
+  }
+  return foundYoungest;
+}, users[0]);
+
+console.log('youngest ===', youngest);
+
+// kiek nariu yra is londono.
+const londUsersObj = users.reduce(
+  (accObj, uObj) => {
+    // atliekma veiksmus su obj
+    if (uObj.town === 'London') {
+      accObj.London++;
+    }
+    // grazinam objekta, ne veiksma su objektu
+    return accObj;
+  },
+  { London: 0 }
+);
+console.log('londUsersObj ===', londUsersObj);
+// const rez = {
+//   London: 2,
+// };
