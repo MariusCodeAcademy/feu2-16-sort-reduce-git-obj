@@ -94,4 +94,4 @@ const students = [
 8. Gauti visu zmoniu metu suma .reduce
 9. suskaiciuoti visu zmoniu metu vidurki
 10  surasti zmongu vardu 'Mike' ir padaryti kad jis nusipirko masina yra tiesa
-11  sugeneruoti rikiuoto saraso pavidalu htmle visu zmoniu vardus ir kiek jiems metu
+11  sugeneruoti visus studentus su ju vardais ir amziais i atskirus p tagus ir patalpinti htmle
