@@ -25,10 +25,10 @@ const nums = [5, 7, 1, 50, 12];
     // ispausdinti su konsole kiekvienos iteracijos:
     // indexa, total, sk
     const sum = total + sk;
-    // console.log(`iteracija: ${i}, sk: ${sk}, total: ${sum}`);
+    console.log(`iteracija: ${i}, sk: ${sk}, total: ${sum}`);
     return sum; // 1
   }, 0);
-  // console.log('reduceRezult ===', reduceRezult);
+  console.log('reduceRezult ===', reduceRezult);
 }
 
 {
@@ -74,7 +74,7 @@ const nums = [5, 7, 1, 50, 12];
   // sugeneruoti html sarasa is masyvo
   const colors = ['red', 'green', 'blue', 'yellow'];
   // <ol id="colors"></ol>
-  const colEl = document.getElementById('colors');
+  // const colEl = document.getElementById('colors');
 
   // map generate elements
   // const htmlString = colors.map((color) => `<li>${color}</li>`).join('');
@@ -83,5 +83,5 @@ const nums = [5, 7, 1, 50, 12];
   // reduce
   const htmlString = colors.reduce((acc, color) => acc + `<li>${color}</li>`, '');
 
-  colEl.innerHTML = htmlString;
+  // colEl.innerHTML = htmlString;
 }

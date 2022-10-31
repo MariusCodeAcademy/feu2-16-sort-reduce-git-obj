@@ -7,3 +7,18 @@
 3. sugeneruoti ol sarasa is `const colors = ['red', 'green', 'blue', 'yellow'];`
 
 4. pridideti html mygtuka, kuri paspaudus isrikiuoti spalvas pagal abecele mazejancia tvarka
+
+## users masyvas 
+
+1. gauti visu vardu ilgiu vidurki
+
+2. grazinti jauniausia zmogu
+
+3. extra sunkesne. grazinti 
+   ```javascript
+   const rez = {
+      London: 2,
+      Kaunas: 3,
+    };
+   ```
+   
