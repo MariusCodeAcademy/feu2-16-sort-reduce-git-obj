@@ -50,6 +50,22 @@ const nums = [5, 7, 1, 50, 12];
 }
 
 {
+  // su forEach atrinkti didziausia masyvo reikme
+  let maxVal = nums[0];
+  nums.forEach((sk) => {
+    // if (sk > maxVal) {
+    //   maxVal = sk;
+    // }
+    maxVal = Math.max(maxVal, sk);
+  });
+  console.log('maxVal ===', maxVal);
+
+  console.log('Math.max(5, 7, 1, 50, 12) ===', Math.max(5, 7, 1, 50, 12));
+  console.log('Math.max(...nums) ===', Math.max(...nums));
+
   // su reduce atrinkti didziausia masyvo reikme
   // hint (Math.max()) palengvinimas
+
+  const maxReduce = nums.reduce((max, sk) => Math.max(max, sk), nums[0]);
+  console.log('maxReduce ===', maxReduce);
 }
