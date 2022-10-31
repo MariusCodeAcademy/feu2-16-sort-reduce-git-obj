@@ -74,11 +74,14 @@ const students = [
     town: 'Siauliai',
     hasCar: false,
   },
-];
-```
+]; 
+``` 
 
 ### Students uzdaviniai
 
+1r. suskaiciuoti studentu vyru amziu vidurki.
+2r. suskaiciuoti vairuotoju amziu vidurki.
+  
 1. atrinkti i nauja masyva studentus kurie turi masina
 1.1 atrinkti i nauja masyva studentus kurie turi masina su forEach
 2. Atrinkti i nauja masyva zmones is Vilniaus
